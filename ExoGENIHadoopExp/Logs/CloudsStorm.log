@@ -1,0 +1,114 @@
+2018-04-17 15:29:11,109 [INFO ] [lambdaExprs.infrasCode.main.ICYAML.loadInfrasCodes]	Infrastructure code from ../CloudsStormExps/TestHadoop/App/infrasCode.yml is loaded successfully!
+2018-04-17 15:29:11,139 [INFO ] [lambdaInfrs.engine.SEngine.ExoGENISEngine.createAccessSSHKey]	There is no ssh key pair for sub-topology 'hadoop_1node_0'! Generating!
+2018-04-17 15:30:57,137 [INFO ] [lambdaInfrs.engine.VEngine.ExoGENI.ExoGENIAgent.createSlice]	Address info -> Node0::205.172.170.4
+2018-04-17 15:30:59,387 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > user.pub
+2018-04-17 15:31:01,400 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa.pub
+2018-04-17 15:31:03,417 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa
+2018-04-17 15:31:05,430 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > sshconf.sh && sudo bash sshconf.sh 
+2018-04-17 15:31:07,471 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm sshconf.sh
+2018-04-17 15:31:09,483 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > script.sh
+2018-04-17 15:31:11,493 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo bash script.sh
+2018-04-17 15:31:59,671 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv script.sh /home/huan/
+2018-04-17 15:32:00,675 [INFO ] [lambdaInfrs.engine.VEngine.OS.ubuntu.VEngineUbuntu.confENV]	Script for 'Node0' is done!
+2018-04-17 15:32:00,676 [INFO ] [lambdaInfrs.engine.SEngine.adapter.SEngine_provision.run]	Sub-topology 'hadoop_1node_0' has been provisioned!
+2018-04-17 15:32:00,711 [INFO ] [topology.description.actual.SubTopology.saveSSHKeys]	The key pair 'exogeni-umass (umass amherst, ma, usa) xo rack' has already been stored!
+2018-04-17 15:32:00,711 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.connectionConf]	'fresh' sub-topology _ctrl cannot be configured. It is not running!
+2018-04-17 15:32:00,711 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.connectionConf]	Connecting sub-topology 'hadoop_1node_0' from 'ExoGENI'
+2018-04-17 15:32:00,713 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.connectionConf]	'fresh' sub-topology hadoop_3nodes_1 cannot be configured. It is not running!
+2018-04-17 15:32:01,741 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > connection.sh && sudo bash connection.sh 
+2018-04-17 15:32:03,802 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm connection.sh
+2018-04-17 15:32:04,823 [INFO ] [topology.description.actual.SubTopology.saveSSHKeys]	The key pair 'exogeni-umass (umass amherst, ma, usa) xo rack' has already been stored!
+2018-04-17 15:32:04,824 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.provision]	All the running sub-topologies have been connected!
+2018-04-17 15:32:05,947 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/bin/hadoop namenode -format
+2018-04-17 15:32:09,998 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mkdir /root/test
+2018-04-17 15:32:13,049 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:32:19,096 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_0.txt 
+2018-04-17 15:32:22,055 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:32:28,108 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_1.txt 
+2018-04-17 15:32:31,110 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:32:37,128 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_2.txt 
+2018-04-17 15:32:40,143 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:32:46,159 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_3.txt 
+2018-04-17 15:32:49,170 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:32:55,160 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_4.txt 
+2018-04-17 15:32:58,167 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:33:04,171 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_5.txt 
+2018-04-17 15:33:07,193 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:33:13,203 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_6.txt 
+2018-04-17 15:33:16,215 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:33:23,427 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_7.txt 
+2018-04-17 15:33:26,267 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:33:32,278 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_8.txt 
+2018-04-17 15:33:35,304 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/
+2018-04-17 15:33:41,297 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_9.txt 
+2018-04-17 15:33:44,304 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/sbin/start-all.sh
+2018-04-17 15:34:05,850 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/bin/hadoop fs -put /root/test /
+2018-04-17 15:34:28,378 [INFO ] [lambdaInfrs.engine.SEngine.ExoGENISEngine.createAccessSSHKey]	The ssh key pair for sub-topology 'hadoop_3nodes_1' has already exist!
+2018-04-17 15:36:13,806 [INFO ] [lambdaInfrs.engine.VEngine.ExoGENI.ExoGENIAgent.createSlice]	Address info -> Node2::205.172.170.5
+2018-04-17 15:36:13,807 [INFO ] [lambdaInfrs.engine.VEngine.ExoGENI.ExoGENIAgent.createSlice]	Address info -> Node1::205.172.170.11
+2018-04-17 15:36:13,808 [INFO ] [lambdaInfrs.engine.VEngine.ExoGENI.ExoGENIAgent.createSlice]	Address info -> Node3::205.172.170.12
+2018-04-17 15:36:14,820 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > user.pub
+2018-04-17 15:36:14,822 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > user.pub
+2018-04-17 15:36:14,825 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > user.pub
+2018-04-17 15:36:16,882 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa.pub
+2018-04-17 15:36:16,885 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa.pub
+2018-04-17 15:36:16,896 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa.pub
+2018-04-17 15:36:18,894 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa
+2018-04-17 15:36:18,897 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa
+2018-04-17 15:36:18,917 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > id_rsa
+2018-04-17 15:36:20,907 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > sshconf.sh && sudo bash sshconf.sh 
+2018-04-17 15:36:20,918 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > sshconf.sh && sudo bash sshconf.sh 
+2018-04-17 15:36:20,920 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > sshconf.sh && sudo bash sshconf.sh 
+2018-04-17 15:36:22,930 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm sshconf.sh
+2018-04-17 15:36:22,934 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm sshconf.sh
+2018-04-17 15:36:22,937 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm sshconf.sh
+2018-04-17 15:36:24,944 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > script.sh
+2018-04-17 15:36:24,945 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > script.sh
+2018-04-17 15:36:24,946 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > script.sh
+2018-04-17 15:36:26,959 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo bash script.sh
+2018-04-17 15:36:26,965 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo bash script.sh
+2018-04-17 15:36:26,970 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo bash script.sh
+2018-04-17 15:37:11,128 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv script.sh /home/huan/
+2018-04-17 15:37:12,129 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv script.sh /home/huan/
+2018-04-17 15:37:12,132 [INFO ] [lambdaInfrs.engine.VEngine.OS.ubuntu.VEngineUbuntu.confENV]	Script for 'Node2' is done!
+2018-04-17 15:37:13,129 [INFO ] [lambdaInfrs.engine.VEngine.OS.ubuntu.VEngineUbuntu.confENV]	Script for 'Node3' is done!
+2018-04-17 15:37:15,198 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo mv script.sh /home/huan/
+2018-04-17 15:37:16,204 [INFO ] [lambdaInfrs.engine.VEngine.OS.ubuntu.VEngineUbuntu.confENV]	Script for 'Node1' is done!
+2018-04-17 15:37:16,205 [INFO ] [lambdaInfrs.engine.SEngine.adapter.SEngine_provision.run]	Sub-topology 'hadoop_3nodes_1' has been provisioned!
+2018-04-17 15:37:16,213 [INFO ] [topology.description.actual.SubTopology.saveSSHKeys]	The key pair 'exogeni-umass (umass amherst, ma, usa) xo rack' has already been stored!
+2018-04-17 15:37:16,213 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.connectionConf]	'fresh' sub-topology _ctrl cannot be configured. It is not running!
+2018-04-17 15:37:16,214 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.connectionConf]	Connecting sub-topology 'hadoop_1node_0' from 'ExoGENI'
+2018-04-17 15:37:16,215 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.connectionConf]	Connecting sub-topology 'hadoop_3nodes_1' from 'ExoGENI'
+2018-04-17 15:37:17,242 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > connection.sh && sudo bash connection.sh 
+2018-04-17 15:37:17,251 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > connection.sh && sudo bash connection.sh 
+2018-04-17 15:37:17,267 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > connection.sh && sudo bash connection.sh 
+2018-04-17 15:37:17,277 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > connection.sh && sudo bash connection.sh 
+2018-04-17 15:37:19,271 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm connection.sh
+2018-04-17 15:37:19,273 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm connection.sh
+2018-04-17 15:37:19,278 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm connection.sh
+2018-04-17 15:37:19,296 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm connection.sh
+2018-04-17 15:37:20,288 [INFO ] [topology.description.actual.SubTopology.saveSSHKeys]	The key pair 'exogeni-umass (umass amherst, ma, usa) xo rack' has already been stored!
+2018-04-17 15:37:20,307 [INFO ] [topology.description.actual.SubTopology.saveSSHKeys]	The key pair 'exogeni-umass (umass amherst, ma, usa) xo rack' has already been stored!
+2018-04-17 15:37:20,307 [INFO ] [lambdaInfrs.engine.TEngine.TEngine.provision]	All the running sub-topologies have been connected!
+2018-04-17 15:37:21,342 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/sbin/hadoop-daemon.sh start datanode
+2018-04-17 15:37:21,344 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/sbin/hadoop-daemon.sh start datanode
+2018-04-17 15:37:21,346 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/sbin/hadoop-daemon.sh start datanode
+2018-04-17 15:37:27,416 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/sbin/yarn-daemon.sh start nodemanager
+2018-04-17 15:37:27,417 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/sbin/yarn-daemon.sh start nodemanager
+2018-04-17 15:37:27,418 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/sbin/yarn-daemon.sh start nodemanager
+2018-04-17 15:37:30,464 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo cat > /root/WordCount.jar
+2018-04-17 15:37:33,493 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/bin/hadoop jar /root/WordCount.jar wordcount /test /output
+2018-04-17 15:40:09,698 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo /root/hadoop/bin/hadoop fs -get /output /root/
+2018-04-17 15:40:14,564 [INFO ] [lambdaInfrs.engine.VEngine.ExoGENI.ExoGENIAgent.deleteSlice]	Slice hadoop_3nodes_1_1422e319-0748-4d1b-af7c-018351a06809 has been deleted successfully!
+2018-04-17 15:40:14,564 [INFO ] [lambdaInfrs.engine.SEngine.adapter.SEngine_delete.run]	Sub-topology 'hadoop_3nodes_1' has been deleted!
+2018-04-17 15:40:14,568 [INFO ] [topology.description.actual.SubTopology.saveSSHKeys]	The key pair 'exogeni-umass (umass amherst, ma, usa) xo rack' has already been stored!
+2018-04-17 15:40:14,641 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ cat > 30395a2a-deb0-4d6c-bc0a-25e867a98ed0.sh && sudo bash 30395a2a-deb0-4d6c-bc0a-25e867a98ed0.sh
+2018-04-17 15:40:16,561 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ rm 30395a2a-deb0-4d6c-bc0a-25e867a98ed0.sh
+2018-04-17 15:40:18,505 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo tar -czf /tmp/D.tar.gz output -C /root
+2018-04-17 15:40:20,421 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo cat /tmp/D.tar.gz
+2018-04-17 15:40:22,338 [INFO ] [com.jcabi.ssh.Execution$Default.info]	$ sudo rm /tmp/D.tar.gz 
+2018-04-17 15:40:23,586 [WARN ] [standalone.MainAsTool.main]	Finished!
+2018-04-17 16:06:59,878 [WARN ] [lambdaInfrs.engine.TEngine.TEngine.delete]	'deleted' sub-topology 'hadoop_3nodes_1' cannot be deleted!
+2018-04-17 16:07:01,294 [INFO ] [lambdaInfrs.engine.VEngine.ExoGENI.ExoGENIAgent.deleteSlice]	Slice hadoop_1node_0_afa30bfd-0e1d-4519-a4d5-3363fe8d4c89 has been deleted successfully!
+2018-04-17 16:07:01,294 [INFO ] [lambdaInfrs.engine.SEngine.adapter.SEngine_delete.run]	Sub-topology 'hadoop_1node_0' has been deleted!
+2018-04-17 16:07:01,329 [INFO ] [topology.description.actual.SubTopology.saveSSHKeys]	The key pair 'exogeni-umass (umass amherst, ma, usa) xo rack' has already been stored!

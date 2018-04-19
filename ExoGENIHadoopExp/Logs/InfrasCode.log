@@ -1,0 +1,484 @@
+LOGs:
+- Time: "1523971924839"
+  Overhead: "173718"
+  Event:
+    Operation: "provision"
+    Command: null
+    Options: null
+    Log: null
+    ObjectType: "SubTopology"
+    Objects: "hadoop_1node_0"
+  LOG:
+    hadoop_1node_0#Provision: "169412@1523971751265"
+    Node0#pubIP: "205.172.170.4"
+    Node0#deploy: "52200@1523971868476"
+    Node0#network: "4098@1523971920717"
+    hadoop_1node_0#Network: "4111@1523971920713"
+- Time: "1523971928963"
+  Overhead: "4120"
+  Event:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop namenode -format"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971931970"
+  Overhead: "3005"
+  Event:
+    Operation: "execute"
+    Command: "mkdir /root/test"
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523971937994"
+  Overhead: "6018"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971941000"
+  Overhead: "3003"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523971947069"
+  Overhead: "6067"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971950075"
+  Overhead: "3004"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523971956088"
+  Overhead: "6010"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971959098"
+  Overhead: "3008"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523971965116"
+  Overhead: "6013"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971968125"
+  Overhead: "3007"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523971974136"
+  Overhead: "6007"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971977146"
+  Overhead: "3007"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523971983151"
+  Overhead: "6002"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971986158"
+  Overhead: "3005"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523971992170"
+  Overhead: "6010"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523971995180"
+  Overhead: "3008"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523972002232"
+  Overhead: "7049"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523972005245"
+  Overhead: "3011"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523972011260"
+  Overhead: "6012"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523972014270"
+  Overhead: "3005"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523972020282"
+  Overhead: "6009"
+  Event:
+    Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt\
+      \ -P /root/test/"
+    Options: null
+    Log: "off"
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG: null
+- Time: "1523972023290"
+  Overhead: "3005"
+  Event:
+    Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523972044330"
+  Overhead: "21039"
+  Event:
+    Operation: "execute"
+    Command: "/root/hadoop/sbin/start-all.sh"
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: "This script is Deprecated. Instead use start-dfs.sh and\
+      \ start-yarn.sh\nStarting namenodes on [Node0]\nNode0: Warning: Permanently\
+      \ added 'node0,192.168.10.10' (ECDSA) to the list of known hosts.\r\nNode0:\
+      \ starting namenode, logging to /root/hadoop/logs/hadoop-root-namenode-Node0.out\n\
+      Node0: Warning: Permanently added 'node0,192.168.10.10' (ECDSA) to the list\
+      \ of known hosts.\r\nNode0: starting datanode, logging to /root/hadoop/logs/hadoop-root-datanode-Node0.out\n\
+      starting yarn daemons\nstarting resourcemanager, logging to /root/hadoop/logs/yarn-root-resourcemanager-Node0.out\n\
+      Node0: Warning: Permanently added 'node0,192.168.10.10' (ECDSA) to the list\
+      \ of known hosts.\r\nNode0: starting nodemanager, logging to /root/hadoop/logs/yarn-root-nodemanager-Node0.out\n"
+- Time: "1523972068372"
+  Overhead: "24039"
+  Event:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop fs -put /root/test /"
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523972240314"
+  Overhead: "171937"
+  Event:
+    Operation: "provision"
+    Command: null
+    Options: null
+    Log: null
+    ObjectType: "SubTopology"
+    Objects: "hadoop_3nodes_1"
+  LOG:
+    Node3#deploy: "49190@1523972183940"
+    Node2#network: "4057@1523972236218"
+    hadoop_3nodes_1#Provision: "167826@1523972068379"
+    Node3#network: "4057@1523972236218"
+    Node3#pubIP: "205.172.170.12"
+    Node1#pubIP: "205.172.170.11"
+    Node2#pubIP: "205.172.170.5"
+    Node2#deploy: "48198@1523972183934"
+    Node1#deploy: "52265@1523972183940"
+    Node1#network: "4085@1523972236217"
+    hadoop_3nodes_1#Network: "4091@1523972236216"
+- Time: "1523972246362"
+  Overhead: "6046"
+  Event:
+    Operation: "execute"
+    Command: "/root/hadoop/sbin/hadoop-daemon.sh start datanode"
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_3nodes_1.Node1||hadoop_3nodes_1.Node2||hadoop_3nodes_1.Node3"
+  LOG:
+    MSG: ""
+    hadoop_3nodes_1.Node1: "starting datanode, logging to /root/hadoop/logs/hadoop-root-datanode-Node1.out\n"
+    hadoop_3nodes_1.Node2: "starting datanode, logging to /root/hadoop/logs/hadoop-root-datanode-Node2.out\n"
+    hadoop_3nodes_1.Node3: "starting datanode, logging to /root/hadoop/logs/hadoop-root-datanode-Node3.out\n"
+- Time: "1523972249425"
+  Overhead: "3061"
+  Event:
+    Operation: "execute"
+    Command: "/root/hadoop/sbin/yarn-daemon.sh start nodemanager"
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_3nodes_1.Node1||hadoop_3nodes_1.Node2||hadoop_3nodes_1.Node3"
+  LOG:
+    MSG: ""
+    hadoop_3nodes_1.Node1: "starting nodemanager, logging to /root/hadoop/logs/yarn-root-nodemanager-Node1.out\n"
+    hadoop_3nodes_1.Node2: "starting nodemanager, logging to /root/hadoop/logs/yarn-root-nodemanager-Node2.out\n"
+    hadoop_3nodes_1.Node3: "starting nodemanager, logging to /root/hadoop/logs/yarn-root-nodemanager-Node3.out\n"
+- Time: "1523972252467"
+  Overhead: "3039"
+  Event:
+    Operation: "put"
+    Command: null
+    Options:
+      Src: "file@$cur_dir/WordCount.jar"
+      Dst: "file@/root/"
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: "File WordCount.jar is uploaded!"
+- Time: "1523972408758"
+  Overhead: "156287"
+  Event:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop jar /root/WordCount.jar wordcount /test /output"
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: "18/04/17 09:37:37 INFO client.RMProxy: Connecting to ResourceManager\
+      \ at /192.168.10.10:8032\n18/04/17 09:37:38 INFO input.FileInputFormat: Total\
+      \ input paths to process : 10\n18/04/17 09:37:38 INFO mapreduce.JobSubmitter:\
+      \ number of splits:10\n18/04/17 09:37:39 INFO mapreduce.JobSubmitter: Submitting\
+      \ tokens for job: job_1523972044653_0001\n18/04/17 09:37:39 INFO impl.YarnClientImpl:\
+      \ Submitted application application_1523972044653_0001\n18/04/17 09:37:39 INFO\
+      \ mapreduce.Job: The url to track the job: http://Node0:8088/proxy/application_1523972044653_0001/\n\
+      18/04/17 09:37:39 INFO mapreduce.Job: Running job: job_1523972044653_0001\n\
+      18/04/17 09:37:48 INFO mapreduce.Job: Job job_1523972044653_0001 running in\
+      \ uber mode : false\n18/04/17 09:37:48 INFO mapreduce.Job:  map 0% reduce 0%\n\
+      18/04/17 09:38:07 INFO mapreduce.Job:  map 9% reduce 0%\n18/04/17 09:38:16 INFO\
+      \ mapreduce.Job:  map 14% reduce 0%\n18/04/17 09:38:19 INFO mapreduce.Job: \
+      \ map 16% reduce 0%\n18/04/17 09:38:25 INFO mapreduce.Job:  map 19% reduce 0%\n\
+      18/04/17 09:38:26 INFO mapreduce.Job:  map 20% reduce 0%\n18/04/17 09:38:28\
+      \ INFO mapreduce.Job:  map 22% reduce 0%\n18/04/17 09:38:29 INFO mapreduce.Job:\
+      \  map 24% reduce 0%\n18/04/17 09:38:34 INFO mapreduce.Job:  map 27% reduce\
+      \ 0%\n18/04/17 09:38:37 INFO mapreduce.Job:  map 29% reduce 0%\n18/04/17 09:38:38\
+      \ INFO mapreduce.Job:  map 31% reduce 0%\n18/04/17 09:38:43 INFO mapreduce.Job:\
+      \  map 35% reduce 0%\n18/04/17 09:38:46 INFO mapreduce.Job:  map 36% reduce\
+      \ 0%\n18/04/17 09:38:47 INFO mapreduce.Job:  map 39% reduce 0%\n18/04/17 09:38:52\
+      \ INFO mapreduce.Job:  map 40% reduce 0%\n18/04/17 09:38:53 INFO mapreduce.Job:\
+      \  map 50% reduce 0%\n18/04/17 09:38:54 INFO mapreduce.Job:  map 53% reduce\
+      \ 0%\n18/04/17 09:38:57 INFO mapreduce.Job:  map 57% reduce 0%\n18/04/17 09:38:58\
+      \ INFO mapreduce.Job:  map 60% reduce 0%\n18/04/17 09:39:08 INFO mapreduce.Job:\
+      \  map 60% reduce 20%\n18/04/17 09:39:09 INFO mapreduce.Job:  map 61% reduce\
+      \ 20%\n18/04/17 09:39:11 INFO mapreduce.Job:  map 63% reduce 20%\n18/04/17 09:39:12\
+      \ INFO mapreduce.Job:  map 64% reduce 20%\n18/04/17 09:39:13 INFO mapreduce.Job:\
+      \  map 66% reduce 20%\n18/04/17 09:39:14 INFO mapreduce.Job:  map 67% reduce\
+      \ 20%\n18/04/17 09:39:15 INFO mapreduce.Job:  map 68% reduce 20%\n18/04/17 09:39:16\
+      \ INFO mapreduce.Job:  map 69% reduce 20%\n18/04/17 09:39:19 INFO mapreduce.Job:\
+      \  map 70% reduce 20%\n18/04/17 09:39:22 INFO mapreduce.Job:  map 71% reduce\
+      \ 20%\n18/04/17 09:39:24 INFO mapreduce.Job:  map 73% reduce 20%\n18/04/17 09:39:25\
+      \ INFO mapreduce.Job:  map 74% reduce 20%\n18/04/17 09:39:26 INFO mapreduce.Job:\
+      \  map 75% reduce 20%\n18/04/17 09:39:27 INFO mapreduce.Job:  map 76% reduce\
+      \ 20%\n18/04/17 09:39:29 INFO mapreduce.Job:  map 79% reduce 23%\n18/04/17 09:39:33\
+      \ INFO mapreduce.Job:  map 81% reduce 23%\n18/04/17 09:39:34 INFO mapreduce.Job:\
+      \  map 82% reduce 23%\n18/04/17 09:39:36 INFO mapreduce.Job:  map 83% reduce\
+      \ 23%\n18/04/17 09:39:37 INFO mapreduce.Job:  map 84% reduce 23%\n18/04/17 09:39:39\
+      \ INFO mapreduce.Job:  map 85% reduce 23%\n18/04/17 09:39:40 INFO mapreduce.Job:\
+      \  map 88% reduce 23%\n18/04/17 09:39:41 INFO mapreduce.Job:  map 88% reduce\
+      \ 27%\n18/04/17 09:39:46 INFO mapreduce.Job:  map 89% reduce 27%\n18/04/17 09:39:48\
+      \ INFO mapreduce.Job:  map 90% reduce 27%\n18/04/17 09:39:55 INFO mapreduce.Job:\
+      \  map 93% reduce 27%\n18/04/17 09:40:00 INFO mapreduce.Job:  map 96% reduce\
+      \ 27%\n18/04/17 09:40:01 INFO mapreduce.Job:  map 97% reduce 27%\n18/04/17 09:40:02\
+      \ INFO mapreduce.Job:  map 97% reduce 30%\n18/04/17 09:40:03 INFO mapreduce.Job:\
+      \  map 100% reduce 30%\n18/04/17 09:40:05 INFO mapreduce.Job:  map 100% reduce\
+      \ 84%\n18/04/17 09:40:06 INFO mapreduce.Job:  map 100% reduce 100%\n18/04/17\
+      \ 09:40:06 INFO mapreduce.Job: Job job_1523972044653_0001 completed successfully\n\
+      18/04/17 09:40:07 INFO mapreduce.Job: Counters: 51\n\tFile System Counters\n\
+      \t\tFILE: Number of bytes read=68065076\n\t\tFILE: Number of bytes written=78868701\n\
+      \t\tFILE: Number of read operations=0\n\t\tFILE: Number of large read operations=0\n\
+      \t\tFILE: Number of write operations=0\n\t\tHDFS: Number of bytes read=1065609360\n\
+      \t\tHDFS: Number of bytes written=854284\n\t\tHDFS: Number of read operations=33\n\
+      \t\tHDFS: Number of large read operations=0\n\t\tHDFS: Number of write operations=2\n\
+      \tJob Counters \n\t\tKilled map tasks=3\n\t\tLaunched map tasks=13\n\t\tLaunched\
+      \ reduce tasks=1\n\t\tData-local map tasks=8\n\t\tRack-local map tasks=5\n\t\
+      \tTotal time spent by all maps in occupied slots (ms)=647075\n\t\tTotal time\
+      \ spent by all reduces in occupied slots (ms)=70496\n\t\tTotal time spent by\
+      \ all map tasks (ms)=647075\n\t\tTotal time spent by all reduce tasks (ms)=70496\n\
+      \t\tTotal vcore-seconds taken by all map tasks=647075\n\t\tTotal vcore-seconds\
+      \ taken by all reduce tasks=70496\n\t\tTotal megabyte-seconds taken by all map\
+      \ tasks=662604800\n\t\tTotal megabyte-seconds taken by all reduce tasks=72187904\n\
+      \tMap-Reduce Framework\n\t\tMap input records=24491600\n\t\tMap output records=176664000\n\
+      \t\tMap output bytes=1671111200\n\t\tMap output materialized bytes=9723590\n\
+      \t\tInput split bytes=1160\n\t\tCombine input records=180687360\n\t\tCombine\
+      \ output records=4693920\n\t\tReduce input groups=67056\n\t\tReduce shuffle\
+      \ bytes=9723590\n\t\tReduce input records=670560\n\t\tReduce output records=67056\n\
+      \t\tSpilled Records=5364480\n\t\tShuffled Maps =10\n\t\tFailed Shuffles=0\n\t\
+      \tMerged Map outputs=10\n\t\tGC time elapsed (ms)=4813\n\t\tCPU time spent (ms)=265160\n\
+      \t\tPhysical memory (bytes) snapshot=2215555072\n\t\tVirtual memory (bytes)\
+      \ snapshot=8714690560\n\t\tTotal committed heap usage (bytes)=1478336512\n\t\
+      Shuffle Errors\n\t\tBAD_ID=0\n\t\tCONNECTION=0\n\t\tIO_ERROR=0\n\t\tWRONG_LENGTH=0\n\
+      \t\tWRONG_MAP=0\n\t\tWRONG_REDUCE=0\n\tFile Input Format Counters \n\t\tBytes\
+      \ Read=1065608200\n\tFile Output Format Counters \n\t\tBytes Written=854284\n"
+- Time: "1523972413712"
+  Overhead: "4952"
+  Event:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop fs -get /output /root/"
+    Options: null
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: ""
+- Time: "1523972417568"
+  Overhead: "3854"
+  Event:
+    Operation: "delete"
+    Command: null
+    Options: null
+    Log: null
+    ObjectType: "SubTopology"
+    Objects: "hadoop_3nodes_1"
+  LOG: null
+- Time: "1523972423583"
+  Overhead: "6014"
+  Event:
+    Operation: "get"
+    Command: null
+    Options:
+      Src: "file@/root/output/"
+      Dst: "file@$root_dir/results"
+    Log: null
+    ObjectType: "VM"
+    Objects: "hadoop_1node_0.Node0"
+  LOG:
+    MSG: ""
+    hadoop_1node_0.Node0: "File(s) is saved at ../CloudsStormExps/TestHadoop/results!"

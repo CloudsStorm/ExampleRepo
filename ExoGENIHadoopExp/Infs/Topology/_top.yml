@@ -4,16 +4,120 @@ publicKeyPath: "name@test.pub"
 topologies:
 - topology: "_ctrl"
   cloudProvider: "ExoGENI"
+  subTopologyClass: null
   domain: "UvA (Amsterdam, The Netherlands) XO Rack"
   status: "fresh"
+  logsInfo: {}
+  sshKeyPairId: null
+  scaledFrom: null
 - topology: "hadoop_1node_0"
   cloudProvider: "ExoGENI"
+  subTopologyClass: null
   domain: "UMass (UMass Amherst, MA, USA) XO Rack"
-  status: "fresh"
+  status: "deleted"
+  logsInfo:
+    hadoop_1node_0#Delete: "1407@1523974019888"
+  sshKeyPairId: "exogeni-umass (umass amherst, ma, usa) xo rack"
+  scaledFrom: null
 - topology: "hadoop_3nodes_1"
   cloudProvider: "ExoGENI"
+  subTopologyClass: null
   domain: "UMass (UMass Amherst, MA, USA) XO Rack"
-  status: "fresh"
+  status: "deleted"
+  logsInfo: {}
+  sshKeyPairId: "exogeni-umass (umass amherst, ma, usa) xo rack"
+  scaledFrom: null
+connections:
+- name: "c0"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "hadoop_1node_0.Node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: null
+  target:
+    vmName: "hadoop_3nodes_1.Node1"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: null
+  logic: "false"
+- name: "c1"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "hadoop_1node_0.Node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: null
+  target:
+    vmName: "hadoop_3nodes_1.Node2"
+    netmask: "24"
+    address: "192.168.10.12"
+    ethName: null
+  logic: "false"
+- name: "c2"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "hadoop_1node_0.Node0"
+    netmask: "24"
+    address: "192.168.10.10"
+    ethName: null
+  target:
+    vmName: "hadoop_3nodes_1.Node3"
+    netmask: "24"
+    address: "192.168.10.13"
+    ethName: null
+  logic: "false"
+- name: "c3"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "hadoop_3nodes_1.Node1"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: null
+  target:
+    vmName: "hadoop_3nodes_1.Node2"
+    netmask: "24"
+    address: "192.168.10.12"
+    ethName: null
+  logic: "false"
+- name: "c4"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "hadoop_3nodes_1.Node1"
+    netmask: "24"
+    address: "192.168.10.11"
+    ethName: null
+  target:
+    vmName: "hadoop_3nodes_1.Node3"
+    netmask: "24"
+    address: "192.168.10.13"
+    ethName: null
+  logic: "false"
+- name: "c5"
+  bandwidth: null
+  latency: null
+  dataSize: null
+  source:
+    vmName: "hadoop_3nodes_1.Node2"
+    netmask: "24"
+    address: "192.168.10.12"
+    ethName: null
+  target:
+    vmName: "hadoop_3nodes_1.Node3"
+    netmask: "24"
+    address: "192.168.10.13"
+    ethName: null
+  logic: "false"
 subnets:
 - name: "s1"
   subnet: "192.168.10.0"

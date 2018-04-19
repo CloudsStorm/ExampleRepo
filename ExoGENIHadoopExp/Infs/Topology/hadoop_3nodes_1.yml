@@ -1,18 +1,70 @@
 ---
+SEngineClass: null
+extraInfo:
+  LocalEntry: "https://umass-hn.exogeni.net:11443/orca/xmlrpc"
 VMs:
 - name: "Node1"
   type: "switch/compute"
   nodeType: "XOMedium"
+  CPU: "1"
+  Mem: "3"
   OStype: "Ubuntu 14.04"
+  defaultSSHAccount: "root"
   script: "name@hadoopInstall.sh"
+  publicAddress: null
+  selfEthAddresses:
+    192.168.10.11/255.255.255.0: null
+  VEngineClass: null
+  extraInfo:
+    OS_URL: "http://geni-images.renci.org/images/standard/ubuntu/ub1404-v1.0.4.xml"
+    DiskSize: "25"
+    OS_GUID: "9394ca154aa35eb55e604503ae7943ddaecc6ca5"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  OS_URL: "http://geni-images.renci.org/images/standard/ubuntu/ub1404-v1.0.4.xml"
+  OS_GUID: "9394ca154aa35eb55e604503ae7943ddaecc6ca5"
 - name: "Node2"
   type: "switch/compute"
   nodeType: "XOMedium"
+  CPU: "1"
+  Mem: "3"
   OStype: "Ubuntu 14.04"
+  defaultSSHAccount: "root"
   script: "name@hadoopInstall.sh"
+  publicAddress: null
+  selfEthAddresses:
+    192.168.10.12/255.255.255.0: null
+  VEngineClass: null
+  extraInfo:
+    OS_URL: "http://geni-images.renci.org/images/standard/ubuntu/ub1404-v1.0.4.xml"
+    DiskSize: "25"
+    OS_GUID: "9394ca154aa35eb55e604503ae7943ddaecc6ca5"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  OS_URL: "http://geni-images.renci.org/images/standard/ubuntu/ub1404-v1.0.4.xml"
+  OS_GUID: "9394ca154aa35eb55e604503ae7943ddaecc6ca5"
 - name: "Node3"
   type: "switch/compute"
   nodeType: "XOMedium"
+  CPU: "1"
+  Mem: "3"
   OStype: "Ubuntu 14.04"
+  defaultSSHAccount: "root"
   script: "name@hadoopInstall.sh"
-  
+  publicAddress: null
+  selfEthAddresses:
+    192.168.10.13/255.255.255.0: null
+  VEngineClass: null
+  extraInfo:
+    OS_URL: "http://geni-images.renci.org/images/standard/ubuntu/ub1404-v1.0.4.xml"
+    DiskSize: "25"
+    OS_GUID: "9394ca154aa35eb55e604503ae7943ddaecc6ca5"
+  VNFType: null
+  scaledFrom: null
+  fake: null
+  OS_URL: "http://geni-images.renci.org/images/standard/ubuntu/ub1404-v1.0.4.xml"
+  OS_GUID: "9394ca154aa35eb55e604503ae7943ddaecc6ca5"
+sliceName: null
+duration: "1"
