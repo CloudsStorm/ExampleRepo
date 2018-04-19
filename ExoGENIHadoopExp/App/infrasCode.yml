@@ -1,0 +1,98 @@
+Mode: "LOCAL" # or CTRL
+InfrasCodes: 
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "provision"
+    ObjectType: SubTopology
+    Objects: "hadoop_1node_0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop namenode -format"
+    Log: off
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "mkdir /root/test"
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "LOOP"
+  Count: 10
+  OpCodes:
+  - Operation: "execute"
+    Command: "wget https://github.com/CloudsStorm/DemoRepos/releases/download/data-0.1/Shakespeare_20.txt -P /root/test/"
+    Log: off
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+  - Operation: "execute"
+    Command: "mv /root/test/Shakespeare_20.txt /root/test/Shakespeare_20_$counter.txt "
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "/root/hadoop/sbin/start-all.sh"
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop fs -put /root/test /"
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "provision"
+    ObjectType: SubTopology
+    Objects: "hadoop_3nodes_1"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "/root/hadoop/sbin/hadoop-daemon.sh start datanode"
+    ObjectType: VM
+    Objects: "hadoop_3nodes_1.Node1||hadoop_3nodes_1.Node2||hadoop_3nodes_1.Node3"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "/root/hadoop/sbin/yarn-daemon.sh start nodemanager"
+    ObjectType: VM
+    Objects: "hadoop_3nodes_1.Node1||hadoop_3nodes_1.Node2||hadoop_3nodes_1.Node3"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "put"
+    Options:
+      Src: "file@$cur_dir/WordCount.jar"     #file path on the local machine, where executing this infrastructure code
+      Dst: "file@/root/"                     #file path on the remote object VM
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop jar /root/WordCount.jar wordcount /test /output"
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "execute"
+    Command: "/root/hadoop/bin/hadoop fs -get /output /root/"
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "delete"
+    ObjectType: SubTopology
+    Objects: "hadoop_3nodes_1"
+- CodeType: "SEQ"
+  OpCode:
+    Operation: "get"
+    Options:
+      Src: "file@/root/output/"             #file path on the remote object VM
+      Dst: "file@$root_dir/results"         #file path on the local machine, where executing this infrastructure code
+    ObjectType: VM
+    Objects: "hadoop_1node_0.Node0"
+
+  
+
+  

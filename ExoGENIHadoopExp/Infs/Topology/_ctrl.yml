@@ -1,0 +1,7 @@
+---
+VMs:
+- name: "ctrl"
+  type: "switch/compute"
+  nodeType: "XOSmall"
+  OStype: "Ubuntu 14.04"
+  script: "name@ctrlConf.sh"

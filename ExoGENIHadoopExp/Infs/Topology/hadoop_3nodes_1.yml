@@ -1,0 +1,18 @@
+---
+VMs:
+- name: "Node1"
+  type: "switch/compute"
+  nodeType: "XOMedium"
+  OStype: "Ubuntu 14.04"
+  script: "name@hadoopInstall.sh"
+- name: "Node2"
+  type: "switch/compute"
+  nodeType: "XOMedium"
+  OStype: "Ubuntu 14.04"
+  script: "name@hadoopInstall.sh"
+- name: "Node3"
+  type: "switch/compute"
+  nodeType: "XOMedium"
+  OStype: "Ubuntu 14.04"
+  script: "name@hadoopInstall.sh"
+  
